@@ -26,11 +26,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Scripts\" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="PsStringUtilities.psd1" />
     <Compile Include="PsStringUtilities.psm1" />
-    <Compile Include="PsStringUtilities.tests.ps1" />
+    <Compile Include="Scripts\Get-StringHash.ps1" />
+    <Compile Include="Scripts\Get-StringHash.tests.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
